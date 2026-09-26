@@ -15,9 +15,9 @@ export const socialLinks = {
   
   // Formatted display names (extracted from environment variables)
   display: {
-    github: import.meta.env.VITE_GITHUB_URL?.replace('https://', ''),
-    linkedin: import.meta.env.VITE_LINKEDIN_URL?.replace('https://', ''),
-    email: import.meta.env.VITE_EMAIL,
+    github: 'https://github.com/lalalovelyy'.replace('https://', ''),
+    linkedin: 'https://www.linkedin.com/in/lovely-irene-cunanan-0b883a392/'.replace('https://', ''),
+    email: 'lovelysocials.26@gmail.com',
   }
 };
 
