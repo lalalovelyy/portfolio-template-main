@@ -9,6 +9,9 @@ import { ExternalLink, Code, Heart, ChevronLeft, ChevronRight } from 'lucide-rea
 import { socialLinks } from '../../config/socialLinks';
 import { lightStars, darkStars, specialStars } from '../../assets/stars';
 import { comingSoon } from '../../assets';
+import losmoIcon from '../../assets/project_icons/losmo.png';
+import kainIcon from '../../assets/project_icons/kain.png';
+import tukiIcon from '../../assets/project_icons/tuki_logo.png';
 
 const Projects = () => {
   const { isDarkMode } = useDarkMode();
@@ -229,37 +232,43 @@ const Projects = () => {
   // project data - these are the main cards
   const projects = [
     {
-      title: "Project One",
-      description: "A brief description of your first project. Highlight the key features and what makes it unique.",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB"],
-      icon: comingSoon,
-      detailsUrl: "/projects/project-one",
+      title: "Tuki",
+      description: "an Android and ASP.NET Core public-transport navigation project built around informal and semi-formal transport in Pampanga.",
+      technologies: ['Kotlin',
+            'Jetpack Compose',
+            'ASP.NET Core',
+            'C#',
+            'SQL',
+            'REST API',
+            'AI / LLM',],
+      icon: tukiIcon,
+      detailsUrl: "/projects/tuki",
       githubUrl: socialLinks.repositories.projectOne
     },
     {
-      title: "Project Two",
-      description: "A brief description of your second project. Highlight the key features and what makes it unique.",
-      technologies: ["Python", "Flask", "PostgreSQL", "Docker"],
-      icon: comingSoon,
-      detailsUrl: "/projects/project-two",
+      title: "Kain",
+      description: "a smart meal planning PWA that finds the most nutritious meals within a family’s budget, complete with a shopping list and nutrition breakdown.",
+      technologies: ["JavaScript", "Tailwind CSS", "PWA", "Chart.JS"],
+      icon: kainIcon,
+      detailsUrl: "/projects/kain",
       githubUrl: socialLinks.repositories.projectTwo
     },
     {
-      title: "Project Three",
-      description: "A brief description of your third project. Highlight the key features and what makes it unique.",
-      technologies: ["JavaScript", "Express", "AWS", "Tailwind CSS"],
-      icon: comingSoon,
-      detailsUrl: "/projects/project-three",
+      title: "Losmo",
+      description: "a fully functional website for a local bar, featuring online reservations, business information, and essential customer-facing features.",
+      technologies: ["CSS", "HTML", "JavaScript"],
+      icon: losmoIcon,
+      detailsUrl: "/projects/losmo-website",
       githubUrl: socialLinks.repositories.projectThree
     },
-    {
-      title: "Project Four",
-      description: "A brief description of your fourth project. Highlight the key features and what makes it unique.",
-      technologies: ["C++", "CMake", "OpenGL"],
-      icon: comingSoon,
-      detailsUrl: "/projects/project-four",
-      githubUrl: socialLinks.repositories.projectFour
-    }
+    // {
+    //   title: "Project Four",
+    //   description: "A brief description of your fourth project. Highlight the key features and what makes it unique.",
+    //   technologies: ["C++", "CMake", "OpenGL"],
+    //   icon: comingSoon,
+    //   detailsUrl: "/projects/project-four",
+    //   githubUrl: socialLinks.repositories.projectFour
+    // }
   ];
 
   // Calculate carousel pagination

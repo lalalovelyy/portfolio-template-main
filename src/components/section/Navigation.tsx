@@ -17,8 +17,9 @@ const Navigation = () => {
   const tabs = useMemo(() => [
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'skills', label: 'Skills' }
+    // { id: 'experience', label: 'Experience' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'certifications', label: 'Certifications' }
   ], []);
 
   useEffect(() => {
@@ -114,7 +115,7 @@ const Navigation = () => {
             WebkitTextFillColor: themeColors.colors.pink[500]
           }}
           onClick={() => window.location.href = '/'}
-          aria-label="Your Name - Go to homepage">
+          aria-label="lovely - Go to homepage">
           Lovely
         </button>
         
